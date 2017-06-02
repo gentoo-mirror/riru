@@ -1,0 +1,15 @@
+app-portage/portage-tui 0.3 9999: Portage terminal user interface.
+dev-games/aseprite 1.1.5.6: Animated sprite editor & pixel art tool
+dev-lisp/picolisp 16.2: PicoLisp - programming language and database
+dev-scheme/guile-ncurses 1.6: Guile Scheme ffi to ncurses library for text-based console UI
+games-engines/love 0.9.1: A framework for 2D games in Lua
+media-gfx/grafx2 2.4: A pixelart-oriented painting program
+media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
+media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player with uncluttered design
+net-im/vacuum 1.2.5: Qt4 Crossplatform Jabber client
+net-im/vk 0.7.2: Vk CLI
+sys-apps/laptasus 0.1_rc2 9999: ASUS laptop tools (backlight, keyboard backight and etc.)
+sys-kernel/asix 4.13.0: A kernel module for the ASIX USB 2.0 low power AX88772B/AX88772A/AX88760/AX88772/AX88178 ethernet controllers
+sys-libs/libfixposix 0.3.0: Thin wrapper over POSIX syscalls
+www-client/firefox 9999: Firefox Web Browser
+x11-misc/polybar 9999: A fast and easy-to-use tool for creating status bars.

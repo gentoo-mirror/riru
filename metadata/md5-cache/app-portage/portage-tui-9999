@@ -1,0 +1,12 @@
+DEFINED_PHASES=install unpack
+DEPEND=>=dev-vcs/git-1.8.2.1
+DESCRIPTION=Portage terminal user interface.
+EAPI=6
+HOMEPAGE=https://github.com/TyanNN/portage-tui
+LICENSE=GPL-3
+RDEPEND=dev-python/pexpect dev-lang/python
+RESTRICT=mirror
+SLOT=0
+_eclass_exported_funcs=src_unpack:git-r3 src_install:-
+_eclasses_=git-r3	cbafa3261c37c7e3af44bb16a34ea390
+_md5_=51cf676e35ba768fd0079653f68c1ba5
