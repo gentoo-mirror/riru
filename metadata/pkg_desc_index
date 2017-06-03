@@ -1,5 +1,6 @@
 app-portage/portage-tui 0.3 9999: Portage terminal user interface.
 dev-games/aseprite 1.1.5.6: Animated sprite editor & pixel art tool
+dev-lang/ocaml 9999: Type-inferring functional programming language descended from the ML family
 dev-lisp/picolisp 16.2: PicoLisp - programming language and database
 dev-scheme/guile-ncurses 1.6: Guile Scheme ffi to ncurses library for text-based console UI
 games-engines/love 0.9.1: A framework for 2D games in Lua
