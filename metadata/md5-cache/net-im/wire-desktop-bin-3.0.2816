@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DESCRIPTION=Wire for desktop
+EAPI=6
+HOMEPAGE=https://wire.com https://github.com/wireapp/wire-desktop
+KEYWORDS=~amd64
+LICENSE=GPL-3
+RDEPEND=gnome-base/gconf:2 dev-libs/nss x11-libs/libXtst net-print/cups
+RESTRICT=bindist mirror
+SLOT=0
+SRC_URI=https://github.com/wireapp/wire-desktop/releases/download/release/3.0.2816/wire-3.0.2816-x86_64.AppImage
+_eclasses_=pax-utils	b963274a93e76570a88168c1f1db4cd7
+_md5_=acfd5f5f69fed13b36524de65be470cd
