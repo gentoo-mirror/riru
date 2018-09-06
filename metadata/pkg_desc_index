@@ -1,2 +1,3 @@
+dev-lang/neko 2.2.0: The Neko Virtual Machine
 dev-scheme/guile-ncurses 1.6: Guile Scheme ffi to ncurses library for text-based console UI
 games-engines/love 0.9.1: A framework for 2D games in Lua
