@@ -8,5 +8,5 @@ RDEPEND=gnome-base/gconf:2 dev-libs/nss x11-libs/libXtst net-print/cups
 RESTRICT=bindist mirror
 SLOT=0
 SRC_URI=https://github.com/wireapp/wire-desktop/releases/download/release/3.0.2816/wire-3.0.2816-x86_64.AppImage
-_eclasses_=pax-utils	db85a3c508cf82c45f24b2723791cc93
+_eclasses_=pax-utils	a41d1fd1c111289ffa04490de6ee79d7
 _md5_=acfd5f5f69fed13b36524de65be470cd
