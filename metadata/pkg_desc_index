@@ -13,5 +13,4 @@ net-im/vk 0.7.2: Vk CLI
 net-im/wire-desktop-bin 3.0.2816: Wire for desktop
 sys-apps/laptasus 0.1_rc2 9999: ASUS laptop tools (backlight, keyboard backight and etc.)
 sys-libs/libfixposix 0.3.0: Thin wrapper over POSIX syscalls
-www-client/firefox 9999: Firefox Web Browser
 x11-misc/polybar 9999: A fast and easy-to-use tool for creating status bars.
