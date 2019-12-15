@@ -7,5 +7,5 @@ KEYWORDS=~amd64
 LICENSE=GPL-2
 RDEPEND=dev-scheme/guile sys-libs/ncurses
 SLOT=0
-SRC_URI=https://mirror.tochlab.net/pub/gnu/guile-ncurses/guile-ncurses-1.6.tar.gz
+SRC_URI=https://mirror.tochlab.net/pub/gnu/guile-ncurses/guile-ncurses-3.0.tar.gz
 _md5_=a8a7b1da70f3a11b545a7056467fc745
