@@ -4,6 +4,7 @@ dev-lang/haxe 3.4.7: An open source toolkit based on a modern, strictly typed pr
 dev-lang/neko 2.2.0: The Neko Virtual Machine
 dev-lang/ocaml 9999: Type-inferring functional programming language descended from the ML family
 dev-lisp/picolisp 16.2: PicoLisp - programming language and database
+dev-python/lazy-object-proxy 1.4.3: A fast and thorough lazy object proxy
 dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for text-based console UI
 games-engines/love 0.9.1: A framework for 2D games in Lua
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
