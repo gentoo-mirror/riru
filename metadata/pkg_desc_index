@@ -9,7 +9,6 @@ dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for te
 games-engines/love 0.9.1: A framework for 2D games in Lua
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
 media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
-media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player with uncluttered design
 net-im/vacuum 1.2.5: Qt4 Crossplatform Jabber client
 net-im/vk 0.7.2: Vk CLI
 net-im/wire-desktop-bin 3.0.2816: Wire for desktop
