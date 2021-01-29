@@ -3,12 +3,13 @@ dev-games/aseprite 1.1.5.6: Animated sprite editor & pixel art tool
 dev-lang/haxe 3.4.7: An open source toolkit based on a modern, strictly typed programming language
 dev-lang/neko 2.2.0: The Neko Virtual Machine
 dev-lang/ocaml 9999: Type-inferring functional programming language descended from the ML family
-dev-lisp/picolisp 16.2: PicoLisp - programming language and database
+dev-lisp/picolisp 21.1: PicoLisp - programming language and database
 dev-python/lazy-object-proxy 1.4.3: A fast and thorough lazy object proxy
 dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for text-based console UI
 games-engines/love 0.9.1: A framework for 2D games in Lua
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
 media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
+media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player with uncluttered design
 net-im/vacuum 1.2.5: Qt4 Crossplatform Jabber client
 net-im/vk 0.7.2: Vk CLI
 net-im/wire-desktop-bin 3.0.2816: Wire for desktop
