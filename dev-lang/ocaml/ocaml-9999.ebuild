@@ -1,4 +1,4 @@
-# Copyright 1999-2017 Gentoo Foundation
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI="5"
@@ -22,7 +22,7 @@ RDEPEND="
 	sys-libs/binutils-libs:=
 	ncurses? ( sys-libs/ncurses:0= )
 	spacetime? ( sys-libs/libunwind:= )
-	X? ( x11-libs/libX11 x11-proto/xproto )"
+	X? ( x11-libs/libX11 x11-base/xorg-proto )"
 DEPEND="${RDEPEND}
 	virtual/pkgconfig"
 
@@ -63,23 +63,24 @@ src_configure() {
 
 	use ncurses || myconf="${myconf} -no-curses"
 	use X || myconf="${myconf} -no-graph"
-	use flambda && myconf="${myconf} -flambda"
-	use spacetime && myconf="${myconf} -spacetime"
+	use flambda && myconf="${myconf} --enable-flambda"
+	use spacetime && myconf="${myconf} --enable-spacetime"
 
 	# ocaml uses a home-brewn configure script, preventing it to use econf.
-	RAW_LDFLAGS="$(raw-ldflags)" ./configure \
+	RAW_LDFLAGS="$(raw-ldflags)" \
+	CC=$(tc-getCC) \
+	AS=$(tc-getAS) \
+	PARTIALLD="$(tc-getLD) -r" \
+	./configure \
 		--prefix "${EPREFIX}"/usr \
 		--bindir "${EPREFIX}"/usr/bin \
-		--target-bindir "${EPREFIX}"/usr/bin \
+		--with-target-bindir "${EPREFIX}"/usr/bin \
 		--libdir "${EPREFIX}"/usr/$(get_libdir)/ocaml \
 		--mandir "${EPREFIX}"/usr/share/man \
-		-target "${CHOST}" \
-		-host "${CBUILD}" \
-		-cc "$(tc-getCC)" \
-		-as "$(tc-getAS)" \
-		-aspp "$(tc-getCC) -c" \
-		-partialld "$(tc-getLD) -r" \
-		--with-pthread ${myconf} || die "configure failed!"
+		--host "${CHOST}" \
+		--build "${CBUILD}" \
+		--target "${CBUILD}" \
+		${myconf} || die "configure failed!"
 
 	# http://caml.inria.fr/mantis/view.php?id=4698
 	export CCLINKFLAGS="${LDFLAGS}"
@@ -105,10 +106,7 @@ src_test() {
 }
 
 src_install() {
-	emake BINDIR="${ED}"/usr/bin \
-		LIBDIR="${ED}"/usr/$(get_libdir)/ocaml \
-		MANDIR="${ED}"/usr/share/man \
-		install
+	emake DESTDIR="${ED}" install
 
 	# Symlink the headers to the right place
 	dodir /usr/include

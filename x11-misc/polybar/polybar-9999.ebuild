@@ -1,9 +1,9 @@
-# Copyright 1999-2020 Gentoo Authors
+# Copyright 1999-2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=7
 
-PYTHON_COMPAT=( python3_{6,7,8} )
+PYTHON_COMPAT=( python3_{6..9} )
 
 inherit git-r3 cmake-utils python-single-r1
 
@@ -12,11 +12,11 @@ EGIT_REPO_URI="https://github.com/polybar/polybar"
 DESCRIPTION="A fast and easy-to-use tool for creating status bars"
 HOMEPAGE="https://github.com/polybar/polybar"
 
-KEYWORDS="~amd64 ~x86"
+KEYWORDS=""
 LICENSE="MIT"
 SLOT="0"
 
-IUSE="alsa curl i3wm ipc mpd network pulseaudio"
+IUSE="alsa curl i3wm ipc mpd network pulseaudio doc"
 REQUIRED_USE="${PYTHON_REQUIRED_USE}"
 
 DEPEND="
@@ -36,6 +36,7 @@ DEPEND="
 	mpd? ( media-libs/libmpdclient )
 	network? ( net-wireless/wireless-tools )
 	pulseaudio? ( media-sound/pulseaudio )
+	doc? ( dev-python/sphinx )
 "
 
 RDEPEND="${DEPEND}"
@@ -49,6 +50,7 @@ src_configure() {
 		-DENABLE_MPD="$(usex mpd)"
 		-DENABLE_NETWORK="$(usex network)"
 		-DENABLE_PULSEAUDIO="$(usex pulseaudio)"
+		-DBUILD_DOC="$(usex doc)"
 	)
 
 	cmake-utils_src_configure
