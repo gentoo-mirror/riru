@@ -3,10 +3,11 @@ DEPEND=>=dev-vcs/git-1.8.2.1[curl]
 DESCRIPTION=Portage terminal user interface.
 EAPI=6
 HOMEPAGE=https://github.com/TyanNN/portage-tui
+INHERIT=git-r3
 LICENSE=GPL-3
 PROPERTIES=live
 RDEPEND=dev-python/pexpect dev-lang/python
 RESTRICT=mirror
 SLOT=0
-_eclasses_=git-r3	3e7ec3d6619213460c85e2aa48398441
+_eclasses_=git-r3	b8e8c92aa5fe8df7187e466138eb4e52
 _md5_=51cf676e35ba768fd0079653f68c1ba5
