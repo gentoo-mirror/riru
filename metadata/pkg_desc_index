@@ -9,6 +9,7 @@ dev-python/lazy-object-proxy 1.4.3: A fast and thorough lazy object proxy
 dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for text-based console UI
 games-engines/love 0.9.1: A framework for 2D games in Lua
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
+media-gfx/hydrus 9999: *booru style image collector and viewer
 media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
 media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player with uncluttered design
 net-im/vacuum 1.2.5: Qt4 Crossplatform Jabber client
