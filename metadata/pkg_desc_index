@@ -9,7 +9,6 @@ dev-python/cloudscraper 1.2.58: A Python module to bypass Cloudflare's anti-bot 
 dev-python/lazy-object-proxy 1.4.3: A fast and thorough lazy object proxy
 dev-python/python-mpv 0.5.2: A ctypes-based python interface to the mpv media player
 dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for text-based console UI
-games-engines/love 0.9.1: A framework for 2D games in Lua
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
 media-gfx/hydrus 9999: *booru style image collector and viewer
 media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
