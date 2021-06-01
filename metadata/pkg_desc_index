@@ -1,6 +1,5 @@
 app-portage/portage-tui 0.3 9999: Portage terminal user interface.
 dev-games/aseprite 1.1.5.6: Animated sprite editor & pixel art tool
-dev-lang/haxe 3.4.7: An open source toolkit based on a modern, strictly typed programming language
 dev-lang/hy 0.19.0 0.20.0: A LISP dialect running in python
 dev-lang/neko 2.2.0: The Neko Virtual Machine
 dev-lang/ocaml 9999: Type-inferring functional programming language descended from the ML family
