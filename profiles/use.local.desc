@@ -4,10 +4,3 @@
 
 dev-lang/neko:apache - Enable apache support.
 dev-lang/neko:regexp - Enable regual expression support
-media-gfx/hydrus:charts - Support for bandwidth charts
-media-gfx/hydrus:cloudscraper - Support working around cloudflare anti-bot page
-media-gfx/hydrus:ffmpeg - Show duration and other information on video thumbnails
-media-gfx/hydrus:lz4 - Enable memory compression in the client
-media-gfx/hydrus:miniupnpc - Support for automatic port forwarding
-media-gfx/hydrus:mpv - Support playing videos with libmpv
-media-gfx/hydrus:socks - Support SOCKS proxies
