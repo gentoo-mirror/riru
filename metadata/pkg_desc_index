@@ -1,5 +1,4 @@
 app-portage/portage-tui 0.3 9999: Portage terminal user interface.
-dev-games/aseprite 1.1.5.6: Animated sprite editor & pixel art tool
 dev-lang/haxe-bin 3.4.7 4.2.3: An open source toolkit based on a modern, strictly typed programming language
 dev-lang/hy 0.19.0 0.20.0: A LISP dialect running in python
 dev-lisp/picolisp 21.1: PicoLisp - programming language and database
@@ -12,4 +11,3 @@ media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player wit
 net-im/vk 0.7.2: Vk CLI
 net-im/wire-desktop-bin 3.0.2816: Wire for desktop
 sys-apps/laptasus 0.1_rc2 9999: ASUS laptop tools (backlight, keyboard backight and etc.)
-x11-misc/polybar 9999: A fast and easy-to-use tool for creating status bars
