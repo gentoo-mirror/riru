@@ -6,5 +6,4 @@ dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for te
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
 media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
 net-im/vk 0.7.2: Vk CLI
-net-im/wire-desktop-bin 3.0.2816: Wire for desktop
 sys-apps/laptasus 0.1_rc2 9999: ASUS laptop tools (backlight, keyboard backight and etc.)
