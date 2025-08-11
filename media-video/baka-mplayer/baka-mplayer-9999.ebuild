@@ -1,8 +1,9 @@
-# Copyright 2019-2021 Gentoo Authors
+# Copyright 2019-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
-inherit git-r3 eutils qmake-utils xdg-utils
+EAPI=8
+
+inherit git-r3 qmake-utils xdg-utils
 
 DESCRIPTION="Cross-platform libmpv-based multimedia player with uncluttered design"
 HOMEPAGE="http://bakamplayer.u8sand.net/"
@@ -15,7 +16,7 @@ IUSE=""
 
 BDEPEND="
 	dev-qt/linguist-tools:5
-	virtual/pkconfig
+	virtual/pkgconfig
 "
 RDEPEND="
 	dev-qt/qtcore:5
@@ -24,8 +25,9 @@ RDEPEND="
 	dev-qt/qtsvg:5
 	dev-qt/qtwidgets:5
 	dev-qt/qtx11extras:5
-	media-video/mpv[libmpv]
-	x11-libs/libX11"
+	media-video/mpv:=[libmpv]
+	x11-libs/libX11
+"
 DEPEND="${RDEPEND}"
 
 S="${WORKDIR}/${PF}"
