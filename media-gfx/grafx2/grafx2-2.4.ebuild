@@ -1,8 +1,7 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
-EAPI=6
+EAPI=8
 
 DESCRIPTION="A pixelart-oriented painting program"
 HOMEPAGE="http://pulkomandy.tk/projects/GrafX2/downloads"
@@ -25,7 +24,7 @@ S=${WORKDIR}/${PN}
 
 src_prepare() {
 	sed -i s/lua5\.1/lua/g src/Makefile
-        eapply_user
+		eapply_user
 }
 
 src_compile() {

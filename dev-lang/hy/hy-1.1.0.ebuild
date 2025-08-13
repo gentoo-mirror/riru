@@ -1,9 +1,10 @@
-# Copyright 1999-2021 Gentoo Authors
+# Copyright 1999-2025 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
-PYTHON_COMPAT=( python3_{7..9} )
+DISTUTILS_USE_PEP517=setuptools
+PYTHON_COMPAT=( python3_{9..14} pypy3 )
 
 inherit distutils-r1
 
@@ -16,21 +17,10 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE="test doc"
 
-RDEPEND=">=dev-python/astor-0.7.1[${PYTHON_USEDEP}]
-	>=dev-python/colorama-0.4.3[${PYTHON_USEDEP}]
-	>=dev-python/funcparserlib-0.3.6[${PYTHON_USEDEP}]
-	>=dev-python/rply-0.7.6[${PYTHON_USEDEP}]
-	"
+RDEPEND=">=dev-python/funcparserlib-1.0.1[${PYTHON_USEDEP}]"
 BDEPEND="${RDEPEND}
 	doc? ( dev-python/sphinx[${PYTHON_USEDEP}] )
-	test? (
-		dev-python/pytest[${PYTHON_USEDEP}]
-	)"
-
-PATCHES=(
-	"${FILESDIR}"/${PN}-0.15.0-do-not-install-get_version.py.patch
-	"${FILESDIR}"/${PN}-xfail-macro-test.patch
-)
+	test? ( dev-python/pytest[${PYTHON_USEDEP}] )"
 
 src_prepare() {
 	default
@@ -42,3 +32,12 @@ python_compile_all() {
 }
 
 distutils_enable_tests pytest
+
+python_test() {
+	for _cmd in {hy,hyc,hy2py}; do
+		echo "#!/usr/bin/env ${EPYTHON}" > bin/${_cmd}
+		echo "import sys; from hy.cmdline import ${_cmd}_main; sys.exit(${_cmd}_main())" >> bin/${_cmd}
+		chmod +x bin/${_cmd}
+	done
+	PATH=bin:${PATH} epytest --ignore-glob='*.hy'
+}
