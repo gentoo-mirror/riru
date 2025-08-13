@@ -1,8 +1,8 @@
-app-portage/portage-tui 0.3 9999: Portage terminal user interface.
 dev-lang/haxe-bin 3.4.7 4.2.3: An open source toolkit based on a modern, strictly typed programming language
+dev-lang/hy 1.1.0: A LISP dialect running in python
 dev-lisp/picolisp 21.1: PicoLisp - programming language and database
 dev-scheme/guile-ncurses 1.6 2.2 3.0: Guile Scheme ffi to ncurses library for text-based console UI
 media-gfx/grafx2 2.4: A pixelart-oriented painting program
-media-gfx/krita-bin 3.1.1: Free digital painting application. Digital Painting, Creative Freedom!
-net-im/vk 0.7.2: Vk CLI
+media-gfx/krita-bin 5.2.11: Free digital painting application. Digital Painting, Creative Freedom!
+media-video/baka-mplayer 9999: Cross-platform libmpv-based multimedia player with uncluttered design
 sys-apps/laptasus 0.1_rc2 9999: ASUS laptop tools (backlight, keyboard backight and etc.)
